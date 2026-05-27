@@ -34,6 +34,8 @@ ast-serialize==0.4.0 ; implementation_name == 'cpython' and sys_platform == 'lin
     --hash=sha256:bb8b3789f77ba507e2005cddc20d6f6c21d3033b13fa6df2db126b812e26796f \
     --hash=sha256:54c7f810a56b3fc0e913dbe72650eb9d8fe77d4fca13f39b72998e0c3dc5194f \
     --hash=sha256:c1d6a666be24c74e019f117aff45400c0ad14d85407bfa9538a083ad65ea8f29
+astor==0.8.1 ; implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:fb207ffac97f6eb5a32401e1b31b4033e3d22668667f2cc451c78340fe75b0ba
 astroid==4.0.4 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:341207c1e07c210f5ebc41cb602a33c1e934b54bc44a5bd2cd387ae2a7829d6e
 asttokens==3.0.1 ; implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -297,6 +299,8 @@ kiwisolver==1.5.0 ; implementation_name == 'cpython' and sys_platform == 'linux'
     --hash=sha256:118f0fe64543c8266beb42a9232570377687dcf00feb16f6319f54885517154a
 kube-authkit==0.4.0 ; implementation_name == 'cpython' and platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux' \
     --hash=sha256:14f3a22f6b1518439bcdf8fff09353a2a538e97c44e2281fb7f4488871a09d22
+kubeflow-kale==2.0.0 ; implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:30beafc313097aa65535626a313d8cdd8c7791c13254ab640c89aaa235344773
 kubeflow-training==1.9.3 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:3eca0e2fefe9dc0d7bc5b3f5a91695cd52bba07140184425669665b7d77dcdc5
 kubernetes==35.0.0 ; implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -389,6 +393,8 @@ nest-asyncio==1.6.0 ; implementation_name == 'cpython' and sys_platform == 'linu
     --hash=sha256:9b34967049bea63b974f905031be1a40be280873f7f128102008b85738daa2c7
 networkx==3.6.1 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:d76ca8a5294909e27b386d2150b4f6da6b5bd6fdc8142f7161949522b3eee35b
+notebook==7.5.6 ; implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:cbf86cee7d33485f960f014e33a0f24a2445d1010c5f0beb615240294239ee2a
 notebook-shim==0.2.4 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:fb3a3083d5bc38e294f9c2e5babe2e227d23e365c5387cf407c0fc2af5a5fc26
 numpy==2.4.5 ; implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -465,6 +471,8 @@ pluggy==1.6.0 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:984df28329611bee51530a6c39a6b3267a07abc257ea752a83b40146e1923b87
 prettytable==3.17.0 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:bf9d87c7dac13fedbeee55a5e82b3505a78c652abff647791bc43afd562be048
+progress==1.6.1 ; implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:4970e321580cd14ecdf0aad96db86d7a7b61e75809dcf179489207519da4e660
 prometheus-client==0.25.0 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:ad5ecb750327dd1002239ec35222a384db45753c87242d48e96f219db05d9591
 prompt-toolkit==3.0.52 ; implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -507,7 +515,11 @@ pyarrow==23.0.1 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:317d00a32e92228ad0491105e6e153f09b4f190e1eabc652c17fbbc104ea6324 \
     --hash=sha256:7f9b4ad7ec323af217e1fe8f02e0880f8857cad83bce34a3121fa6feb8755209 \
     --hash=sha256:41de5e11db69bb9c4af31976c6743d7e43beb7c7620ec7b81d133caf6ba67276 \
-    --hash=sha256:21855f7fa76d32250847d3f73aefbc6993e6e92b7c48a2651aeedbdc1a25e37a
+    --hash=sha256:21855f7fa76d32250847d3f73aefbc6993e6e92b7c48a2651aeedbdc1a25e37a \
+    --hash=sha256:b9ba5accd5a416ab422687d9dc2765d13a2e0047aaeb07c7a3e04984bba721d3 \
+    --hash=sha256:aee214dd04a45f14d94ac8838a858c6f8ff1c7ee9f45f66d77374446fa8150a9 \
+    --hash=sha256:c86f0ce2f8839364ceb978657ff813146a5eace430824feed832444d7a987fb2 \
+    --hash=sha256:6d370db2c8276498976f4113ec08cb571aa20bd9a27a41827477bc36c14b2a50
 pyasn1==0.6.3 ; implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:51194c7b4281edb039247c23e11f5280b4c9713ec246fda1fa9b5d960b860e51
 pyasn1-modules==0.4.2 ; implementation_name == 'cpython' and sys_platform == 'linux' \
