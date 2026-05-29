@@ -30,6 +30,8 @@ arrow==1.4.0 ; python_full_version >= '3.12' and implementation_name == 'cpython
 ast-serialize==0.4.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:0efc72e4aa1bfa4e4ba1e817ede45f99fee52a31566e5d52244b0dc5e2996346 \
     --hash=sha256:cf7bcd5a05358c5508ef6469341692c5176867e344635a21fe32f77887b55420
+astor==0.8.1 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:95d8825afa82253b3e1b8d55d01765d1c65db1d12ee75273aca50fd23a7e6e3a
 astroid==4.0.4 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:9aa012dd7f3402e220d18110511f587784a73c2b1c466d8f2dc24207c1095c76
 asttokens==3.0.1 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -289,6 +291,8 @@ kiwisolver==1.5.0 ; python_full_version >= '3.12' and implementation_name == 'cp
     --hash=sha256:105cf843131d09e930b95fe5cb54b3a18255399aa3348cd1a4a03f52e6c09e37
 kube-authkit==0.4.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and platform_machine != 'ppc64le' and platform_machine != 's390x' and sys_platform == 'linux' \
     --hash=sha256:f8c4d69077124f00d6baf2c90b30db4d5612784d4e67d9d9657f7dc521d89e6a
+kubeflow-kale==2.0.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:85a447bf00dda72cb679f33a58cd23c84411a0c15412911d6c5fb6df0afc87e1
 kubeflow-training==1.9.3 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:050aa7c3c863bbdd952fee9cec76c43dc93f09c319cfa2e4d1f4af733243a16d
 kubernetes==35.0.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -373,6 +377,8 @@ nest-asyncio==1.6.0 ; python_full_version >= '3.12' and implementation_name == '
     --hash=sha256:194b39aa2c0e2b25b2f5f2430e72e83fe01e4ef695eb6d0fd687ab8f377eb8f2
 networkx==3.6.1 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:14b7ae75296f1c9d80c84cec5439530ae9f6bde9404a8952036c61300a874bf7
+notebook==7.5.6 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:2a18f18995130d22d2731d2f18fd48e29a1b637aa01a7cc0460152fd44d4fef8
 notebook-shim==0.2.4 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:5ebce16f35f7d5079db74e1236f8513bd40f3a849b897f64d1c08b7f59523c75
 numpy==2.4.5 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -447,6 +453,8 @@ pluggy==1.6.0 ; python_full_version >= '3.12' and implementation_name == 'cpytho
     --hash=sha256:26b9fd8dd7f8a455ae0281747e51d1a4160267a7fd51bc5a0bb73c9bb0e17dd8
 prettytable==3.17.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:fe6142baaa83758aec4866d5ea4018b1d0cfa07c938f44077c0990f2dcc65856
+progress==1.6.1 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
+    --hash=sha256:15d04016b3f01e2f0f30360644233431b5e9d94f832c0940018d3fe2a785b0bb
 prometheus-client==0.25.0 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:2395f4b0eb82825e406d57d4b3ce42ae1867dc50613bf39a47457fb9a4b006b7
 prompt-toolkit==3.0.52 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
@@ -474,6 +482,8 @@ py-spy==0.4.2 ; python_full_version >= '3.12' and implementation_name == 'cpytho
 pyarrow==23.0.1 ; python_full_version >= '3.12' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:fe670d3b6e6e17fc28fa5ddb20ee20db289fa6e4b40279a5643e7963692ba014 \
     --hash=sha256:b09f0daa4cc8d593fd0f2a28dedb42f485efc802045c83082826edcc88c7437e \
+    --hash=sha256:e3dbaae48beb401af7f77ea33916c1c6d230dc74c75d015ea598c98f67d794b6 \
+    --hash=sha256:352295c15e07ab88754990910452140c4464822dabd584bfaa139af948110e12 \
     --hash=sha256:5f2aefda93dff508a809f26899c744d276f2d707fdefa473301d0daa3aa156e9 \
     --hash=sha256:8c9d009aa86f24541e2e481edbaf99cdf31550938f88b05fee0fecb208e25043 \
     --hash=sha256:de982b9bd68e72a4bf805056649932432a60ed172bd27ff9c3808c4913c4d9e0 \
