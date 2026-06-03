@@ -33,3 +33,13 @@ fi
 # Set environment variables for KFP authentication
 export KF_PIPELINES_SA_TOKEN_PATH="/var/run/secrets/kubernetes.io/serviceaccount/token"
 export KF_PIPELINES_SSL_SA_CERTS="${KF_PIPELINES_SSL_SA_CERTS:-/var/run/secrets/kubernetes.io/serviceaccount/ca.crt}"
+
+# Set environment variable for upload and run links
+# do we need to check for the ODH too?
+DASHBOARD_HOST=$(oc get route rhods-dashboard -n redhat-ods-applications -o jsonpath='{.spec.host}' 2>/dev/null || \
+                 oc get route odh-dashboard -n opendatahub -o jsonpath='{.spec.host}' 2>/dev/null)
+if [ -z "$DASHBOARD_HOST" ]; then
+    echo "ERROR: Could not find RHOAI/ODH dashboard route"
+fi
+export KALE_UPLOAD_LINK="https://${DASHBOARD_HOST}/pipelines/definitions/{namespace}/{pipeline_id}/{version_id}/view"
+export KALE_RUN_LINK="https://${DASHBOARD_HOST}/pipelines/runs/{namespace}/runs/{run_id}"
