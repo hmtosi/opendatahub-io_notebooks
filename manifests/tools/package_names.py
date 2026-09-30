@@ -36,6 +36,7 @@ MANIFEST_LOWER_NAMES: frozenset[str] = frozenset(
         "MLflow",
         "Numpy",
         "Odh-Elyra",
+        "Odh-Kale",
         "Pandas",
         "Psycopg",
         "PyMongo",
