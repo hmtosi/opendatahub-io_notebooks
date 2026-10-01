@@ -346,6 +346,7 @@ def test_image_pyprojects(subtests: pytest.Subtests, manifests_directory: pathli
                     "Kfp",
                     "JupyterLab",
                     "Odh-Elyra",
+                    "Odh-Kale",
                     "Codeflare-SDK",
                 ]
 

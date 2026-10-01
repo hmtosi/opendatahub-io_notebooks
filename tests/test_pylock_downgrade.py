@@ -39,6 +39,7 @@ _TRACKED_PYPI_RAW: tuple[str, ...] = (
     "mlflow",
     "numpy",
     "odh-elyra",
+    "odh-kale",
     "pandas",
     "psycopg",
     "pymongo",
