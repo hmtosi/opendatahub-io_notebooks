@@ -358,7 +358,7 @@ numpy==2.5.3 ; python_full_version == '3.12.*' and implementation_name == 'cpyth
     --hash=sha256:3ac37c440e68634e3d8dbefa497975698806c7eac3cb6d123c247f0e53408c6a
 oauthlib==3.3.1 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:f370abab1b1c2a6c4cee58209d430d26d73807b4e30980e78e9801788f534cf3
-odh-kale==2.2.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
+odh-kale==2.3.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:1b4b0c5a2f035a5421854275d0565b813b2f02efbfc7320056fecd3f0344fd2e
 onnx==1.22.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:b45193d0e48f1354ad6602647fc40e5b08f25348d342903faf6af4193e263acb \

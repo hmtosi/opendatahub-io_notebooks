@@ -394,7 +394,7 @@ odh-elyra==5.0.3 ; python_full_version == '3.12.*' and implementation_name == 'c
     --hash=sha256:e73140973d8abd9202eddc6cec5e554ab2a1ab5ca9332af8b471d9314221cad1
 odh-jupyter-trash-cleanup==0.1.1 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:d096b384c43c3d3932567cb9e80b76179c13ee22d46dbb3eb4219f8d021ac145
-odh-kale==2.2.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
+odh-kale==2.3.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:1b4b0c5a2f035a5421854275d0565b813b2f02efbfc7320056fecd3f0344fd2e
 onnx==1.22.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:b45193d0e48f1354ad6602647fc40e5b08f25348d342903faf6af4193e263acb \

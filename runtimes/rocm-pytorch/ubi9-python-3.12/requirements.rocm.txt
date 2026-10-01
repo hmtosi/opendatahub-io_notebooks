@@ -305,7 +305,7 @@ numpy==2.5.3 ; python_full_version == '3.12.*' and implementation_name == 'cpyth
     --hash=sha256:b5a990b12e1fc08baba1bbabe532dcdcd8140d4f4eaec4cf1891640fe18d0dd4
 oauthlib==3.3.1 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:85911787c86f5316402be0c046e4f8bc63eb276e43a89c678de724fd9bb919f1
-odh-kale==2.2.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
+odh-kale==2.3.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:b81fe384fd3cd12112b5ac319da4689b65ca9c26c805a809d79778a54e742e2e
 onnx==1.22.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:930f864313343cbce034a47191717372a57e8da6de5e3a5b17baf05927676a79 \

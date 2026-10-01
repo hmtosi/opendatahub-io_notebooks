@@ -191,7 +191,7 @@ notebook-shim==0.2.4 ; python_full_version == '3.12.*' and implementation_name =
     --hash=sha256:dff20201f6677c0f7f31517898d5073da70e51d8039a1ff98da4ffc2e7827ae3
 oauthlib==3.3.1 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:f370abab1b1c2a6c4cee58209d430d26d73807b4e30980e78e9801788f534cf3
-odh-kale==2.2.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
+odh-kale==2.3.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:1b4b0c5a2f035a5421854275d0565b813b2f02efbfc7320056fecd3f0344fd2e
 opentelemetry-api==1.44.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:b1e0c91a2b18caba1bef91686bfa26bf8157d04c06bd36dc4c782093fe9a70f2

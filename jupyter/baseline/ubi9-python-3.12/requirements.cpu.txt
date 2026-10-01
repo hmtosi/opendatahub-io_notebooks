@@ -268,7 +268,7 @@ odh-elyra==5.0.3 ; (implementation_name == 'cpython' and platform_machine == 'aa
     --hash=sha256:fd7c93cf5d02baf9c5b66cfff529a4c105bb6482011e20b05a7e1a5d65883b0a
 odh-jupyter-trash-cleanup==0.1.1 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:19b409372d5781937b42e047bf23503f4d602461765a9b145b0a6974cd090623
-odh-kale==2.2.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
+odh-kale==2.3.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:21d51ce32e4641a6c8e490cacdeac4820e61e1c1b6b4e590b67c4336de9a70f7
 opentelemetry-api==1.44.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef
