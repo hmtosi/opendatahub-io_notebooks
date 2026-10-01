@@ -4,6 +4,30 @@ set -x
 # Runtime configuration for Kubeflow Kale JupyterLab extension
 # This script configures Kale to connect to KFP by reading Elyra runtime config
 
+configure_kale_dashboard_links() {
+  local public_endpoint dashboard_origin authority port
+  local hostname_pattern='[A-Za-z0-9]+(-[A-Za-z0-9]+)*(\.[A-Za-z0-9]+(-[A-Za-z0-9]+)*)*'
+  public_endpoint="$(jq -er '.metadata.public_api_endpoint | select(type == "string")' "$ELYRA_RUNTIME_CONFIG" 2>/dev/null)" || return 0
+
+  # RHOAI's Elyra public endpoint points through the dashboard's external route.
+  # Only this route ties the endpoint to the RHOAI dashboard hosting the pipeline.
+  [[ "$public_endpoint" =~ ^(https?://${hostname_pattern}(:[0-9]{1,5})?)/external/elyra/[^/[:space:]?#]+/?$ ]] || return 0
+  dashboard_origin="${BASH_REMATCH[1]}"
+  authority="${dashboard_origin#*://}"
+  if [[ "$authority" == *:* ]]; then
+    port="${authority##*:}"
+    (( 10#$port >= 1 && 10#$port <= 65535 )) || return 0
+  fi
+
+  if [ -z "${KALE_RUN_LINK:-}" ]; then
+    KALE_RUN_LINK="${dashboard_origin}/develop-train/pipelines/runs/{namespace}/runs/{run_id}"
+  fi
+  if [ -z "${KALE_UPLOAD_LINK:-}" ]; then
+    KALE_UPLOAD_LINK="${dashboard_origin}/develop-train/pipelines/definitions/{namespace}/{pipeline_id}/{version_id}/view"
+  fi
+  export KALE_RUN_LINK KALE_UPLOAD_LINK
+}
+
 # Read Elyra config and copy the relevant information to Kale config
 # Extract KFP configuration from Elyra runtime configs if available
 if [ "$(ls -A /opt/app-root/runtimes/ 2>/dev/null)" ]; then
@@ -28,6 +52,7 @@ if [ "$(ls -A /opt/app-root/runtimes/ 2>/dev/null)" ]; then
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     export ELYRA_RUNTIME_CONFIG
     python3 "${SCRIPT_DIR}/configure_kale_from_elyra.py"
+    configure_kale_dashboard_links
   fi
 fi
 
