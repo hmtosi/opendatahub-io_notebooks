@@ -375,7 +375,7 @@ nvidia-ml-py==13.610.43 ; python_full_version == '3.12.*' and implementation_nam
     --hash=sha256:9cd08d10e3b5ee1ffa3011022de0cd53a43052d881287b07e627987f12d9e72b
 oauthlib==3.3.1 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:8ad6576fa403738412bb92587b6bbce4be8562f514c59c090327eeace803cb63
-odh-kale==2.2.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
+odh-kale==2.3.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:4ad155f9beb3344bb3cd01cb48b0527f90435836649238a2c5195f364a34284e
 onnx==1.22.0 ; python_full_version == '3.12.*' and implementation_name == 'cpython' and sys_platform == 'linux' \
     --hash=sha256:ceff6a479c550c541638a379a88b8415a5419ac6b602aa225553406725a61f2b \

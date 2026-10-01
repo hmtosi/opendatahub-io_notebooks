@@ -210,7 +210,7 @@ notebook-shim==0.2.4 ; (implementation_name == 'cpython' and platform_machine ==
     --hash=sha256:411a5be4e9dc882a074ccbcae671eda64cceb068767e9a3419096986560e1cef
 oauthlib==3.3.1 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:88119c938d2b8fb88561af5f6ee0eec8cc8d552b7bb1f712743136eb7523b7a1
-odh-kale==2.2.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
+odh-kale==2.3.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:21d51ce32e4641a6c8e490cacdeac4820e61e1c1b6b4e590b67c4336de9a70f7
 opentelemetry-api==1.44.0 ; (implementation_name == 'cpython' and platform_machine == 'aarch64' and sys_platform == 'linux') or (implementation_name == 'cpython' and platform_machine == 'x86_64' and sys_platform == 'linux') \
     --hash=sha256:94b98c893a91b88657eaac1e3ba89618cdb85be6918196705354f34728b2cdef
