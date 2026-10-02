@@ -3,6 +3,7 @@ set -x
 
 # Runtime configuration for Kubeflow Kale JupyterLab extension
 # This script configures Kale to connect to KFP by reading Elyra runtime config
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Read Elyra config and copy the relevant information to Kale config
 # Extract KFP configuration from Elyra runtime configs if available
@@ -25,7 +26,6 @@ if [ "$(ls -A /opt/app-root/runtimes/ 2>/dev/null)" ]; then
   if [ -n "$ELYRA_RUNTIME_CONFIG" ] && [ -f "$ELYRA_RUNTIME_CONFIG" ]; then
     # Configure Kale KFP server connection by mapping Elyra config to Kale config
     # Note: The Python script sets KF_PIPELINES_TOKEN directly in the environment
-    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     export ELYRA_RUNTIME_CONFIG
     python3 "${SCRIPT_DIR}/configure_kale_from_elyra.py"
   fi
@@ -39,7 +39,7 @@ export KF_PIPELINES_SSL_SA_CERTS="${KF_PIPELINES_SSL_SA_CERTS:-/var/run/secrets/
 # Disable security context enforcement (leave RUN_AS_USER and RUN_AS_GROUP undefined)
 export KALE_SECURITY_CONTEXT_ENABLED=false
 
-# Set default image
+# Fallback when no datascience runtime image is available from Jupyter metadata.
 export KALE_DEFAULT_BASE_IMAGE=ubi9/python-312
 
 # Set the default pipeline output directory to _kale/ (instead of the default .kale/)
@@ -49,3 +49,7 @@ mkdir -p "${KALE_SETTINGS_DIR}"
 if [ ! -f "${KALE_SETTINGS_DIR}/kale-settings.jupyterlab-settings" ]; then
     echo '{"outputPath": "_kale"}' > "${KALE_SETTINGS_DIR}/kale-settings.jupyterlab-settings"
 fi
+
+# Populate Kale's Base Image selector and default from the runtime images copied for Elyra.
+export KALE_SETTINGS_PATH="${KALE_SETTINGS_DIR}/kale-settings.jupyterlab-settings"
+python3 "${SCRIPT_DIR}/configure_kale_runtime_images.py"

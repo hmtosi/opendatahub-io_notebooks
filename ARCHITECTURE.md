@@ -222,6 +222,8 @@ in JupyterLab. The integration chain:
 4. **`setup-elyra.sh`** (sourced at workbench startup) copies the mounted JSON configs into
    Elyra's metadata directories so pipelines can discover available runtime images and the
    Data Science Pipelines endpoint
+5. **`setup-kale.sh`** adds those runtime image names to Kale's settings and uses the image
+   tagged `datascience` as `defaultBaseImage` when no custom default is set
 
 ### Security configuration sync
 
